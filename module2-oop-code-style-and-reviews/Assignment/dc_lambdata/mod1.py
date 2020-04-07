@@ -1,7 +1,7 @@
-
 # dc_lambdata\mod1.py
 
 import pandas
+
 
 def full_state_name(my_df):
     """
@@ -72,20 +72,18 @@ def full_state_name(my_df):
         'WI': 'Wisconsin',
         'WV': 'West Virginia',
         'WY': 'Wyoming'
-        }
-        
-    print(type(df["abbrev"])) #> <class 'pandas.core.series.Series'>
+    }
+
+    print(type(df["abbrev"]))  # > <class 'pandas.core.series.Series'>
     df["state_name"] = df["abbrev"].map(states)
     return df
-
-
 
 if __name__ == "__main__":
 
     df1 = pandas.DataFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
     full_df1 = full_state_name(df1)
     print(full_df1.head())
-    
+
     df2 = pandas.DataFrame({"abbrev": ["GA", "NY", "NC", "WY"]})
     full_df2 = full_state_name(df2)
     print(full_df2.head())

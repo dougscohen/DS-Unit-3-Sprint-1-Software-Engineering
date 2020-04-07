@@ -1,7 +1,7 @@
-
 # dc_lambdata\mod2.py
 
 import pandas as pd
+
 
 def split_date(dataframe):
     """
@@ -10,7 +10,7 @@ def split_date(dataframe):
     Params: dataframe with column called "date" which has the date in the
     format "MM/DD/YYYY"
     """
-    
+
     df = dataframe.copy()
     df['date'] = pd.to_datetime(df['date'], infer_datetime_format=True)
 
