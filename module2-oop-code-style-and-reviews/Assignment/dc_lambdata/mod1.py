@@ -8,7 +8,7 @@ def full_state_name(my_df):
     Creates a new column called "state_name" which has the corresponding state
     name.
 
-    Params my_df (pandas.DataFrame) with with column called "abbrev" which has
+    Params my_df (pandas.DataFrame) with column called "abbrev" which has
     state abbrevs
 
     See: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
