@@ -3,7 +3,7 @@
 import pandas as pd
 
 
-def split_date(dataframe):
+def split_date(df):
     """
     Creates 3 new columns with year, month, and day
 
@@ -11,7 +11,7 @@ def split_date(dataframe):
     format "MM/DD/YYYY"
     """
 
-    df = dataframe.copy()
+    df = df.copy()
     df['date'] = pd.to_datetime(df['date'], infer_datetime_format=True)
 
     df['year'] = df['date'].dt.year
