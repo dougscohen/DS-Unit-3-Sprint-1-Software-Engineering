@@ -1,0 +1,18 @@
+
+use unittest module
+wont need any 3rd party packages
+
+***SPRINT CHALLENGE TOPICS***
+
+1. write a class (specified set of attributes)
+	__init__ accpets certain perameter
+	told what class is called and what the attributes are
+	
+2. write a method in the class (invoke methods on instance of the class
+
+3. implement inheritence (autos is good example to look at for this)
+	write more methods
+	
+4. implement unit test to test methods(state names conversion good example to look at)
+
+5. code conforms to pep8 style (docstrings, etc.)
