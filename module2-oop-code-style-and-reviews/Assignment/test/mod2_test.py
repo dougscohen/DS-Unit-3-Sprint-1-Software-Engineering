@@ -20,7 +20,8 @@ class TestMod2(unittest.TestCase):
         self.assertEqual(full_df.columns.tolist(), ['date', 'year', 'month',
                                                     'day'])
 
-        # TODO: consider also testing the actual values (perhaps the first row)
+        # test the length of the dataframe
+        self.assertEqual(len(full_df['year']), 4)
 
 
 if __name__ == '__main__':

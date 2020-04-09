@@ -1,4 +1,6 @@
 
+# test/mod1_test.py
+
 import unittest
 
 import pandas
@@ -15,7 +17,8 @@ class TestMod1(unittest.TestCase):
         df = full_state_name(df)
         self.assertEqual(df.columns.tolist(), ['abbrev', 'state_name'])
 
-        # TODO: consider also testing the actual values (perhaps the first row)
+        # test the first row
+        self.assertEqual(df.iloc[0].tolist(), ['CT', 'Connecticut'])
 
 
 if __name__ == '__main__':
